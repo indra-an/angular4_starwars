@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f4fff5;
+}
+
+small.time{
+  float: right;
+}
+
+.jumbotron.white{
+  background-color: #ffffff;
+}
+
+.jumbotron p {
+  font-size: 16px;
+}
+
+.back-btn {
+  float: right;
+  margin-bottom: 10px;
+}

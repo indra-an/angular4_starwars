@@ -1,0 +1,22 @@
+<div class="jumbotron white">
+  <h1>{{film.title}}</h1>
+  <p>{{film.opening_crawl}}</p>
+
+  <p *ngIf="film.episode_id"><b>Episode : </b>
+    <br/> {{film.episode_id}}</p>
+
+  <p *ngIf="film.director"><b>Director : </b>
+    <br/> {{film.director}}</p>
+
+  <p *ngIf="film.producer"><b>Producer : </b>
+    <br/> {{film.producer}}</p>
+
+  <p *ngIf="film.release_date"><b>Release Date : </b>
+    <br/> {{film.release_date | date: 'longDate'}}</p>
+
+  <p *ngIf="char_names.length > 0"><b>Actors : </b>
+    <br/> {{char_names.join(', ')}}</p>
+
+  <p style="margin-bottom: 30px"><a class="btn btn-default btn-lg back-btn" [routerLink]="['/']" role="button">Back</a></p>
+
+</div>
