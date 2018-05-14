@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
+## Note
+If you want add some pages, add component to folder `view`
+If you want add component that will be accessed by other pages, add component to folder `common`
+If you want add some services, add service to folder `services`and from file `api.service` you can use method getData() to get data by environment url or method getDataFromRawUrl() to get data from url you want to set
+You can change endpoint URL from `environment` file
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
